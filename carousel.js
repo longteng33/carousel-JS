@@ -52,6 +52,9 @@ Carousel.prototype = {
 
     init: function () {
         var _this = this;
+        this.toArray(this.img).forEach(function(item){
+            item.style="transition-duration:"+_this.gradualTime+"ms"
+        })
         // 点击上下键
         if (this.prev) {
             this.prev.onclick = function () {

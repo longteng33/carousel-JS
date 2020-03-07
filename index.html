@@ -45,22 +45,12 @@
 			position: absolute;
 			height: 100%;
 			opacity: 0;
-			transition: all 0.6s;
-			animation-duration: 0.6s;
-			animation-timing-function: linear;
-			animation-fill-mode: forwards;
+			transition-property: opacity;
 		}
 		.box_img ul li.active{
-			animation-name: gradual;
+			opacity:1;
 		}
-		@keyframes gradual {
-			from{
-				opacity: 0;
-			}
-			to{
-				opacity: 1;
-			}
-		}
+		
 		.box_img ul li a {
 			display: block;
 			height: 100%;
@@ -171,8 +161,8 @@
 				dots: dots,
 				prev: prev,
 				next: next,
-				intervalTime: 3000,
-				gradualTime: 600,
+				intervalTime: 3000,//自动轮播间隔
+				gradualTime: 600,//渐变时间
 				className: "active",
 			})
 
