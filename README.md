@@ -1,5 +1,6 @@
 # carousel-JS
 用js和animation实现的渐变轮播<br>
+https://longteng33.github.io/carousel-JS/<br>
 1,使用js封装：<br>
 box: 元素，包裹整个轮播图的组件<br>
 img: 元素，类数组，包裹每个图片元素li<br>
