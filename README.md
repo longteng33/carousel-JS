@@ -14,3 +14,4 @@ className: 字符串，当前展示图片和小圆点的类名,<br>
 3，在setInterval和setTimeout中传入函数时，函数中的this会指向window对象<br>
 这是由于setTimeout()调用的代码运行在与所在函数完全分离的执行环境上。这会导致这些代码中包含的 this 关键字会指向 window (或全局)对象<br>
 4，使用bind改变this指向<br>
+5,将e.target更改为e.currentTarget,返回当前事件触发元素，而e.target可能会返回事件触发元素下的子元素

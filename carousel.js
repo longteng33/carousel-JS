@@ -41,6 +41,7 @@ Carousel.prototype = {
             dotsArr.forEach(function (item) {
                 item.classList.remove(_this.className)
             });
+            console.log(this)
             this.dots[this.i].classList.add(_this.className);
         }
         var imgArr = this.toArray(this.img);
@@ -74,7 +75,7 @@ Carousel.prototype = {
                 item.index = index;
                 item.onmouseover = function (e) {
 
-                    _this.i = e.target.index - 1;
+                    _this.i = e.currentTarget.index - 1;
                     // 因为执行move(1)时i会加1，所以先减一
                     _this.move(1)
                 };
